@@ -86,9 +86,10 @@ public class Main {
         System.out.println("задание7");
         int ferstFriday = 6;
         for (int friday = ferstFriday; friday <= 31; friday++) {
-            System.out.println("«Сегодня пятница, " + friday + " -е число. Необходимо подготовить отчет».");
+            if (friday % 6 == 0) {
+                System.out.println("«Сегодня пятница, " + friday + " -е число. Необходимо подготовить отчет».");
+            }
         }
-
         //Задача8
         System.out.println("Задание8");
         int currentYear = 2023;
